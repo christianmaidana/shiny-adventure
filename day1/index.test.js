@@ -31,5 +31,17 @@ describe('Day 1 Test', () => {
     const result = process(mockData, MODES.GOLD);
 
     expect(result).toBe(expectedResult);
-  })
+  });
+
+  
+  it('Should process the text and return 91', () => {
+    const mockData = [
+      'nine1twonem', // 91
+    ];
+    const expectedResult = 83;
+
+    const result = process(mockData, MODES.GOLD);
+
+    expect(result).toBe(expectedResult);
+  });
 })
