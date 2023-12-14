@@ -8,9 +8,9 @@ const methods = {
 const taskNumber = 1;
 const mode = MODES.GOLD;
 
-const filename = `./day${taskNumber}/input.${mode}.csv`;
+const filename = `./day${taskNumber}/input.csv`;
 
-console.log(`Executing sample for day ${taskNumber}...`);
+console.log(`Executing sample for day ${taskNumber} (${mode === MODES.GOLD? 'gold' : 'silver'}) ...`);
 console.log('------------------------------');
 const data = readFile(filename);
 console.time('Performance');

@@ -23,7 +23,6 @@ const getNumber = (line, mode) => {
   let firstNumber = Number.NaN, lastNumber = Number.NaN;
   let leftIt = 0;
   if (mode === MODES.GOLD) {
-    console.log(`${line}  => ${textToNumber(line)}`);
     line = textToNumber(line);
   }
   let rightIt = line.length - 1;
@@ -35,7 +34,6 @@ const getNumber = (line, mode) => {
   while (Number.isNaN(lastNumber) && rightIt >= 0) {
     lastNumber = Number.parseInt(line[rightIt--]);
   }
-  console.log("Numbers:: ", firstNumber, lastNumber);
   return (firstNumber * 10) + lastNumber;
 };
 
